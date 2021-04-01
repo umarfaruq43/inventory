@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/20bdf30e52.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/responsiveness.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/inventory.css" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="">
+      <!------------ SIDE NAV --------------->
+      <nav class="side-nav" id="side_nav">
+        <div id="mySidenav" class="sidenav">
+          <div class="logo">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&#9776;</a
+            >
+            <img src="img/logoW.png" />
+          </div>
+          <a href="#">Dashboard</a>
+          <a href="#">Finance</a>
+          <div class="dropdown">
+            <a href="inventory.html"
+              >Inventory
+              <div class="dropdown-content">
+                <a href="manage.html">Manage Products</a>
+                <a href="low_stock.html">Low Stock Reminder</a>
+              </div>
+            </a>
+          </div>
+          <a href="#">Logistics</a>
+          <a href="#">Calendar</a>
+        </div>
+
+        <!-------- TOP NAV -------->
+        <div class="top_nav" id="top_nav">
+          <p>
+            <span onclick="openNav()">&#9776;</span>
+          </p>
+          <p>
+            <i class="fas fa-user-circle"></i>
+          </p>
+        </div>
+      </nav>
+
+      <!------ PAGE CONTENT ------->
+      <div id="main">
+        <div class="content_container">
+          <div class="title">
+            <h2 class="space">Manage Products</h2>
+          </div>
+          <div class="product_content container">
+            <div class="row">
+              <p class="col-lg-6 col-md-6 col-sm-12 text-center">
+                <input type="search" placeholder="Search Product" />
+              </p>
+              <p class="col-lg-3 col-md-3 col-sm-6 right">
+                <button>Add Product <i class="fas fa-plus-circle"></i></button>
+              </p>
+              <p class="col-lg-3 col-md-3 col-sm-6 right">
+                <button>Edit Product <i class="fas fa-pen"></i></button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "300px";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>

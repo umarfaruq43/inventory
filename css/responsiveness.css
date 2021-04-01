@@ -1,0 +1,159 @@
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 7px;
+  }
+  .section_text p {
+    width: 35.3rem;
+  }
+  .big_title {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  html {
+    font-size: 7px;
+  }
+  .intro_text h1 {
+    width: 300px;
+  }
+  footer .row-links {
+    display: block;
+    padding: 3rem 5rem;
+  }
+}
+@media screen and (max-width: 753px) {
+  .phone_box .phone {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 5px;
+  }
+  .intro_text h1 {
+    width: 250px;
+  }
+  .section_text p {
+    width: 35.3rem;
+    font-size: 1.8em;
+  }
+  .big_title {
+    font-size: 3.5rem;
+  }
+  .phone_box .phone {
+    width: 24rem;
+  }
+}
+@media screen and (max-width: 538px) {
+  .phone_box .phone {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 9px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+  header {
+    height: 90vh;
+  }
+  header {
+    height: 100vh;
+  }
+  header h1 {
+    font-size: 3rem;
+    word-break: normal;
+    margin-top: 0;
+    width: 100%;
+  }
+  header p {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  /*** Navbar Responsiveness ***/
+  .navbar {
+    height: 9vh;
+  }
+  .menu {
+    margin-right: 2rem;
+  }
+  .navbar ul li a:hover {
+    background-color: transparent;
+  }
+
+  .navbar ul li {
+    width: 100px;
+    font-size: 5px;
+    margin: auto;
+    display: block;
+  }
+  .intro {
+    height: 80rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  }
+  .col-1-of-2 {
+    width: 100%;
+  }
+  .col-1-of-3 {
+    width: 90%;
+    margin: 2rem;
+  }
+
+  .section_text h1 {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+  /* .section_text p {
+    font-size: 1.7rem;
+  } */
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .manag3x {
+    height: 100%;
+  }
+
+  .manag3x .col-1-of-3 p  {
+    font-size: 3rem;
+  }
+  .img_box{
+    width: 10rem;
+    height: 10rem;
+  }
+  .big_title {
+    font-size: 3rem;
+  }
+  .pre_footer ul {
+    margin: 0 2rem;
+    padding: 0;
+    display: block;
+  }
+  .search_foot {
+    padding: 0 2rem;
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+  .copyright {
+    position: relative;
+    text-align: center;
+    left: 0rem;
+  }
+  footer .icon_box {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    position: relative;
+    text-align: center;
+  }
+  footer {
+    height: 100%;
+  }
+}

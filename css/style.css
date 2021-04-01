@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+button {
+  outline: none;
+}
+body {
+  font-family: Manrope;
+  margin: 0;
+}
+.padding {
+  padding: 2rem;
+}
+.big_p {
+  padding-left: 4rem;
+}
+
+/* BUTTON COMPONENT */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a7194b;
+  /* height: 4.5rem; */
+  /* width: 9.6rem; */
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+}
+
+/*Nav bar styling*/
+.navbar {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 9rem;
+  left: 0px;
+  top: 0.1rem;
+  background: #fff;
+  overflow: hidden;
+  /* position: absolute;
+  width: 100%; */
+}
+.logo {
+  width: 12rem;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 1.3rem;
+  transition: all .3s;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #a7194b;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+  background-color: #fff;
+}
+.navbar ul li a.active {
+  background-color: red;
+  color: #fff;
+}
+.navbar ul li button:hover{
+  background-color: #f6e8ed;
+  color: #a7194b;
+  font-weight: 800;
+  transition: all .3s;
+
+}
+
+.nav_bg {
+  background-color: #4aa0d7;
+  position: absolute;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.linkrel a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+/* INTRODUCTION PAGE  */
+.intro {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 100%);
+  height: 60%;
+}
+.intro h1 {
+  width: 57.6rem;
+  color: #0392ce;
+}
+.intro_text {
+  width: 55.4rem;
+}
+/* HEADER  */
+
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.692)),
+    url(../img/background.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+header h1 {
+  font-size: 4.8rem;
+  margin-top: 0;
+  width: 50%;
+}
+header p {
+  font-size: 2rem;
+  width: 50%;
+}
+.header_text {
+  padding: 0 5%;
+}
+/* general section  */
+section {
+  background: #ffffff;
+  display: block;
+}
+
+/* ABOUT US STYLE  */
+.about_us {
+  background: #ffffff;
+}
+.about_us .section_text h1 {
+  font-size: 3.5rem;
+  max-width: 59.6rem;
+}
+
+/*<!-- Manage3X SECTION -->*/
+
+.manag3x {
+  background: #f6e8ed;
+}
+.col-1-of-3 {
+  height: 30rem;
+  width: 30%;
+  border-radius: 1rem;
+}
+
+.img_box {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.manag3x .col-1-of-3 p {
+  font-size: 4.8rem;
+  color: #a7194b;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+.manag3x_content{
+  text-align: center;
+}
+.manag3x_content div{
+  display: inline-block;
+}
+/* OUR SOLUTION STYLE */
+
+.section_title {
+  /* font-size: 2rem; */
+  font-weight: 800;
+  color: #a7194b;
+}
+
+.section_text h1 {
+  font-family: Manrope;
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #a7194b;
+}
+
+.section_text p {
+  /* height: 16rem; */
+  padding-bottom: 3.5rem;
+  width: 45.3rem;
+  font-size: 1.6rem;
+}
+
+/* FINACE STYLE  */
+
+.finance {
+  width: 39rem;
+}
+
+/* FORM STYLES  */
+
+.form_title {
+  color: #012481;
+}
+.section_form{
+  background-color: #f6e8ed;
+}
+.section_form_text {
+  /* padding: 5rem; */
+  width: 80%;
+}
+.section_form_text h3 {
+  font-size: 3rem;
+  color: #c4c4c4;
+}
+.section_form form {
+  text-align: center;
+}
+.section_form_text form p {
+  margin: 4rem 0;
+}
+.section_form input,
+textarea {
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid #012481;
+  outline: none;
+}
+.section_form input::placeholder,
+textarea::placeholder {
+  color: #c4c4c4;
+  font-size: 1.8rem;
+}
+.section_form textarea {
+  height: 13rem;
+  outline: none;
+  border: 1px solid #012481;
+  padding: 2rem;
+}
+
+.pre_footer{
+}
+.pre_footer ul {
+margin: 0 2rem;padding: 0;
+display: inline-block;
+}
+.pre_footer li{
+  list-style-type: none;
+}
+.pre_footer .col-1-of-2{
+}
+.foot_link h1{
+margin-bottom: 1rem;
+  color: #a7194b;
+  font-size: 2.5rem;
+}
+.foot_link a{
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 800;
+  padding-top: 1rem ;
+  
+}
+.pre_footer .form_group{
+  position: relative;
+  width: 100%;
+
+}
+.form_group input {
+  font-size: 1.4rem;
+  padding: 1rem ;
+  width: 100%;
+  outline: none;
+  background-color: #f6e8ed;
+  border:none;
+}
+.form_group button{
+  padding: 1rem ;
+  position: absolute;
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: #a7194b;
+  border: none;
+  outline: none;right: 0;
+
+}
+.gold{
+  position: relative;
+}
+.foot_content{
+  width: 100%;
+  display: flex; 
+  justify-content: flex-end ;
+  align-items: baseline;
+}
+.search_foot{
+  padding: 0 2rem;
+  width: 60%;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+
+}
+.search_foot p{
+  text-align: right;
+  font-size: 1.4rem;
+}
+footer{
+  height: 16vh;
+  position: relative;
+  font-size: 1.4rem;
+  border-top: 1px solid rgba(102, 102, 102, 0.466);
+}
+
+.footer_logo{
+  width: 70px;
+}
+.copyright{
+  position: absolute;
+  bottom: 0rem;
+  left: 2rem;
+
+}
+footer .icon_box{
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  
+
+}
+footer .icon_box i {
+  display: inline-block;
+  padding: 0 2rem;
+  
+}
+footer .icon_box  a {
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 1.9rem;
+color: #666666;
+}
