@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+        src="https://kit.fontawesome.com/20bdf30e52.js"
+        crossorigin="anonymous">
+       </script>
+        <link rel="stylesheet" href="css/inventory.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsiveness.css" />
+        <link rel="stylesheet" href="css/utilities.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="">
+        <!------------ SIDE NAV --------------->
+        <nav class="side-nav" id="side_nav">
+            <div id="mySidenav" class="sidenav">
+                <div class="logo">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                    >&#9776;</a>
+                    <img src="img/logoW.png" />
+                </div>
+                <a href="#">Dashboard</a>
+                <a href="#">Finance</a>
+                <div class="dropdown">
+                    <a href="inventory.html">Inventory
+                        <div class="dropdown-content">
+                            <a href="manage.html">Manage Products</a>
+                            <a href="low_stock.html">Low Stock Reminder</a>
+                        </div>
+                    </a>
+                </div>
+                <a href="#">Logistics</a>
+                <a href="#">Calendar</a>
+            </div>
+
+            <!-------- TOP NAV -------->
+            <div class="top_nav" id="top_nav">
+                <p>
+                    <span onclick="openNav()">&#9776;</span>
+                </p>
+                <p>
+                     <i class="fas fa-user-circle"></i>
+                </p>
+            </div>
+        </nav>
+
+          <!--------- MAIN BODY --------->
+        <main id="main">
+         <div class="container">
+          <div class="row">
+                <div class="col-lg-12 col-md-12 left title">
+                    <p id="low-stock">Low Stock Remainder</p>
+                </div>
+          </div> 
+          
+            <div class="row">
+              <div class="col-lg-6 first-sub-title-left left">
+                  <p>
+                      Urgent
+                  </p>
+              </div>
+              <div class="col-lg-6 right first-sub-title-right">
+                  <a href="#"><i class="fas fa-pen"></i>Add Product</a>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 sub-content">
+                   <p>Product:Chivita Exotic</p>
+                   <p>Available:26</p>
+                   <p>Last Re-stocked:01/11/2020</p>
+               </div>
+               <div class="col-lg-4 col-md-4 sub-content">
+                   <p>Product:Dangote Sugar</p>
+                   <p>Available:15</p>
+                   <p>Last Re-stocked:21/09/2020</p>
+               </div>
+               <div class="col-lg-4 col-md-4 sub-content">
+                   <p>Product:Peak Milk 750g</p>
+                   <p>Available:75</p>
+                   <p>Last Re-stocked:11/12/2020</p>
+               </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 first-sub-title-left left">
+                  <p>
+                    Important
+                  </p>
+              </div>
+              <div class="col-lg-6 right first-sub-title-right">
+                  <a href="#"><i class="fas fa-pen"></i>Add Product</a>
+              </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 sub-content">
+                   <p>Product:Good Morning Oats</p>
+                   <p>Available:300</p>
+                   <p>Last Re-stocked:26/08/2020</p>
+               </div>
+               <div class="col-lg-4 col-md-4 sub-content">
+                   <p>Product:Indomie</p>
+                   <p>Available:400</p>
+                   <p>Last Re-stocked:10/12/2020</p>
+               </div>
+               <div class="col-lg-4 col-md-4 sub-content">
+                   <p>Product:Chivita</p>
+                   <p>Available:350</p>
+                   <p>Last Re-stocked:10/11/2020</p>
+               </div>
+            </div>
+            
+
+          </div>
+        </main>
+
+
+
+        <script>
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+            document.getElementById("main").style.marginLeft = "300px";
+            }
+    
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+    </body>
+</html>

@@ -26,6 +26,10 @@ html{
   color: #c4c4c4;
 }
 .title {
+  width: 342px;
+  height: 37px;
+  left: 330px;
+  top: 198px;
 }
 .space {
   padding: 2rem 0;
@@ -49,4 +53,11 @@ html{
 /* product_content  */
 .product_content{
     padding: 1rem 0;
+}
+
+
+/* Low stock*/
+
+#low-stock{
+  color: #012481;
 }

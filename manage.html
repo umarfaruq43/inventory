@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="css/responsiveness.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/inventory.css" />
-
+    
     <title>Dashboard</title>
-  </head>
-  <body>
+    </head>
+    <body>
     <div class="">
       <!------------ SIDE NAV --------------->
       <nav class="side-nav" id="side_nav">
@@ -57,16 +57,13 @@
       <!------ PAGE CONTENT ------->
       <div id="main">
         <div class="content_container">
-          <div class="title">
-            <h2 class="space">Manage Products</h2>
-          </div>
           <div class="product_content container">
             <div class="row">
               <p class="col-lg-6 col-md-6 col-sm-12 text-center">
                 <input type="search" placeholder="Search Product" />
               </p>
               <p class="col-lg-3 col-md-3 col-sm-6 right">
-                <button>Add Product <i class="fas fa-plus-circle"></i></button>
+                <button>Add Product<i class="far fa-plus-circle"></i></button>
               </p>
               <p class="col-lg-3 col-md-3 col-sm-6 right">
                 <button>Edit Product <i class="fas fa-pen"></i></button>
@@ -74,20 +71,17 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <script>
-      function openNav() {
+      <script>
+       function openNav() {
         document.getElementById("mySidenav").style.width = "300px";
         document.getElementById("main").style.marginLeft = "300px";
-      }
+       }
 
-      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-      function closeNav() {
+       /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
+       }
+      </script>
   </body>
 </html>
